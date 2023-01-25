@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    {{>navbar}}
+
+    <form action="/register" method="POST">
+        <div class="form-group">
+            <label for="formGroupExampleInput">firstname</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="" name="firstname">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">lastname</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="" name="lastname">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">email</label>
+            <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="" name="email">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">phone</label>
+            <input type="text" minlength="10" maxlength="10" class="form-control" id="formGroupExampleInput2"
+                placeholder="" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">age</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="" name="age">
+        </div>
+        <div class="form-group">
+            <div class="maxl">
+                <label class="radio inline">
+                    <input type="radio" name="gender" value="male" checked>
+                    <span>Male</span>
+                </label>
+                <label class="radio inline">
+                    <input type="radio" name="gender" value="female" checked>
+                    <span>Female</span>
+                </label>
+            </div>
+        </div>
+
+        <br><br>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">password</label>
+            <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="" name="password">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">confirmpassword</label>
+            <input type="password" class="form-control" id="formGroupExampleInput2" placeholder=""
+                name="confirmpassword">
+        </div>
+        <input type="submit" class="btnRegister" value="Register">
+
+    </form>
+</body>
+
+</html>
